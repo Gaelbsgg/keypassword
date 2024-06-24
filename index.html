@@ -13,7 +13,22 @@
     <img class="logo" src="assets/logo.png" alt="gerador_de_senhas">
     <main class="container-input">
         <span>Tamanho <span id="valor"></span> caracteres</span>
-        <input id="slider" class="slider" type="range" min="5" max="25" value="15">
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15"><br><br>
+        <fieldset>
+            <legend class="legend">Selecione quais os tipos de caracteres contidos na senha!</legend>
+            <div class="check-container">
+                <input class="check-box" type="checkbox" id="maiusculo" name="maiusculo" checked/>
+                <label for="maiusculo">Letras maiúsculas</label>
+            </div>
+            <div class="check-container">
+                <input class="check-box" type="checkbox" id="minusculo" name="minusculo" checked/>
+                <label for="minusculo">Letras minúsculas</label>
+            </div>
+            <div class="check-container">
+                <input class="check-box" type="checkbox" id="numeros" name="numeros" checked/>
+                <label for="numeros">Números</label>
+            </div>
+        </fieldset>
         <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
     </main>
     <div id="container-password" class="container-password hide" onclick="copyPassword()">
